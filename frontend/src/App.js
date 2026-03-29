@@ -4,7 +4,7 @@ import { MessageCircle, X, Send, Menu, Home, Building2, Briefcase, Users, Mail, 
 import '@/App.css';
 import axios from 'axios';
 
-const N8N_WEBHOOK_URL = 'http://localhost:5678/webhook/real-estate-assistant';
+const N8N_WEBHOOK_URL = process.env.REACT_APP_N8N_WEBHOOK_URL || 'http://localhost:5678/webhook/real-estate-assistant';
 
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
