@@ -1,0 +1,114 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury)",
+  "colors": {
+    "background": "#050505",
+    "surface": "#0a0a0a",
+    "surface_glass": "rgba(10, 10, 10, 0.7)",
+    "primary": "#ffffff",
+    "primary_foreground": "#000000",
+    "secondary": "#1a1a1a",
+    "secondary_foreground": "#e5e5e5",
+    "muted": "#262626",
+    "muted_foreground": "#a3a3a3",
+    "accent": "#333333",
+    "accent_foreground": "#ffffff",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "ring": "rgba(255, 255, 255, 0.2)"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, serif",
+    "body_font": "Manrope, sans-serif",
+    "heading_styles": {
+      "h1": "text-5xl sm:text-6xl lg:text-[5rem] font-light tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl font-light tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl font-normal tracking-tight leading-snug",
+      "h4": "text-xl font-normal tracking-tight"
+    },
+    "body_styles": {
+      "base": "text-base font-light text-muted-foreground leading-relaxed",
+      "large": "text-lg font-light text-secondary-foreground leading-relaxed",
+      "small": "text-sm font-light text-muted-foreground uppercase tracking-[0.2em]"
+    }
+  },
+  "layout_and_spacing": {
+    "section_padding": "py-24 sm:py-32",
+    "container_width": "max-w-7xl mx-auto px-6 sm:px-8",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8",
+    "border_radius": "rounded-none"
+  },
+  "components": {
+    "header": {
+      "style": "fixed w-full z-50 transition-all duration-300",
+      "background": "backdrop-blur-xl bg-black/60 border-b border-white/10",
+      "nav_links": "hidden md:flex space-x-8 text-sm uppercase tracking-[0.2em] text-white/70 hover:text-white transition-colors"
+    },
+    "hero": {
+      "layout": "relative h-screen min-h-[800px] flex items-center justify-center pt-20",
+      "background": "Absolute positioning with bg-black/50 overlay to ensure text contrast",
+      "content": "Text centered, h1 with max-w-4xl, primary CTA button to open AI chat"
+    },
+    "properties_grid": {
+      "layout": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+      "card_style": "group cursor-pointer border border-white/10 hover:border-white/30 transition-all duration-500 bg-surface",
+      "image_container": "relative aspect-[4/5] overflow-hidden",
+      "image_style": "object-cover w-full h-full group-hover:scale-105 transition-transform duration-700",
+      "content": "p-8 flex flex-col justify-end"
+    },
+    "services_bento": {
+      "layout": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "items": [
+        "col-span-12 md:col-span-8 bg-surface p-12 border border-white/10 flex flex-col justify-between min-h-[400px]",
+        "col-span-12 md:col-span-4 bg-surface p-12 border border-white/10 flex flex-col justify-between min-h-[400px]"
+      ]
+    },
+    "ai_chat": {
+      "trigger": "fixed bottom-8 right-8 z-50 h-16 w-16 rounded-full bg-white text-black flex items-center justify-center hover:scale-110 shadow-lg transition-transform",
+      "modal": "fixed bottom-28 right-8 z-50 w-[calc(100vw-2rem)] md:w-full max-w-[400px] h-[600px] bg-surface border border-white/20 shadow-2xl flex flex-col rounded-xl overflow-hidden",
+      "header": "p-6 border-b border-white/10 bg-[#0a0a0a] flex items-center justify-between",
+      "messages": "flex-1 overflow-y-auto p-6 space-y-6 bg-[#050505]",
+      "bot_message": "bg-[#1a1a1a] text-white p-4 rounded-lg rounded-tl-none border border-white/5",
+      "user_message": "bg-white text-black p-4 rounded-lg rounded-tr-none",
+      "input_area": "p-4 border-t border-white/10 bg-[#0a0a0a] flex gap-2"
+    },
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-white/90 px-8 py-4 text-sm uppercase tracking-[0.2em] transition-all duration-300 inline-flex items-center justify-center gap-2",
+      "secondary": "bg-transparent text-white border border-white/30 hover:border-white px-8 py-4 text-sm uppercase tracking-[0.2em] transition-all duration-300 inline-flex items-center justify-center gap-2"
+    }
+  },
+  "interactions": {
+    "hover_states": "Subtle border brightening (border-white/10 to border-white/30), image scaling (group-hover:scale-105)",
+    "scroll_animations": "Staggered fade-up for grid items using framer-motion",
+    "button_interactions": "Background slide or scale effects"
+  },
+  "media": {
+    "hero_image": "https://images.pexels.com/photos/9150621/pexels-photo-9150621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "properties": [
+      "https://images.pexels.com/photos/8143677/pexels-photo-8143677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1718838096786-a14845a3287e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlJTIwbWFuc2lvbnxlbnwwfHx8YmxhY2tfYW5kX3doaXRlfDE3NzQ4MTMwOTd8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.pexels.com/photos/26886881/pexels-photo-26886881.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/26886877/pexels-photo-26886877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "services_images": [
+      "https://images.unsplash.com/photo-1602167775612-11ba283b0bd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlJTIwbWFuc2lvbnxlbnwwfHx8YmxhY2tfYW5kX3doaXRlfDE3NzQ4MTMwOTd8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1707292993068-277b499f1f4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8fGJsYWNrX2FuZF93aGl0ZXwxNzc0ODEzMDk5fDA&ixlib=rb-4.1.0&q=85"
+    ],
+    "testimonials": [
+      "https://images.pexels.com/photos/4687544/pexels-photo-4687544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/4687549/pexels-photo-4687549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ]
+  },
+  "instructions_to_main_agent": {
+    "1": "Use ONLY React, Tailwind CSS, and Shadcn UI components. Use pure HTML/Tailwind for structural marketing layouts, relying on Shadcn purely for interactive components (dialogs, inputs, forms).",
+    "2": "Create a luxury, high-end, monochrome aesthetic. Strict use of black, white, and varying opacities of white for borders and text.",
+    "3": "Use `lucide-react` for icons, particularly for the bottom-right AI Chat floating trigger and chat interface elements.",
+    "4": "The AI Chat should be implemented as a state-driven fixed overlay that toggles when the floating button or Hero CTA is clicked.",
+    "5": "The AI Chat must connect to `http://localhost:5678/webhook/real-estate-assistant` to POST user queries. Implement a simulated loading state while waiting for the response. Provide empty state and error state.",
+    "6": "Typography: Use `Cormorant Garamond` (Google Font) for headings and `Manrope` (Google Font) for body. Ensure these are imported via Google Fonts in `index.html` or `index.css`.",
+    "7": "Use `framer-motion` for page reveal animations and scroll-triggered fade-ups. Add subtle parallax to the hero image.",
+    "8": "Apply `data-testid` to all interactive elements, including chat trigger (`data-testid=\"chat-trigger\"`), chat input (`data-testid=\"chat-input\"`), send button (`data-testid=\"chat-send-button\"`), and hero cta (`data-testid=\"hero-chat-cta\"`).",
+    "9": "The design must feel cinematic: high contrast, elegant typography, generous spacing, thin 1px borders, and striking photography.",
+    "10": "For the chat UI, ensure high contrast. The bot's message bubble should be dark gray (#1a1a1a) and the user's message bubble should be white with black text.",
+    "11": "Make sure to configure Tailwind config extending fontFamily with cormorant and manrope. Example: `fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Manrope', 'sans-serif'] }`"
+  }
+}
